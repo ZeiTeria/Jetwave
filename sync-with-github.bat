@@ -1,5 +1,5 @@
 @echo off
-setlocal enabledelayedexpansion
+setlocal
 
 cd /d "%~dp0"
 
@@ -36,20 +36,21 @@ if errorlevel 1 (
     exit /b 1
 )
 
+set TIMESTAMP=%date% %time%
+
 echo.
 echo [3/4] Checking for local changes to commit...
-git diff --quiet --exit-code
+git diff --quiet
 set HAS_UNSTAGED=%errorlevel%
-git diff --cached --quiet --exit-code
+git diff --cached --quiet
 set HAS_STAGED=%errorlevel%
+set HAS_UNTRACKED=0
 for /f %%i in ('git ls-files --others --exclude-standard') do set HAS_UNTRACKED=1
 
-if "%HAS_UNSTAGED%%HAS_STAGED%"=="00" if not defined HAS_UNTRACKED (
+if "%HAS_UNSTAGED%%HAS_STAGED%%HAS_UNTRACKED%"=="000" (
     echo No local changes to commit.
 ) else (
     git add -A
-    for /f "tokens=1-5 delims=/ " %%a in ("%date%") do set TODAY=%%a-%%b-%%c
-    set TIMESTAMP=%date% %time%
     git commit -m "Auto sync update: %TIMESTAMP%"
     if errorlevel 1 (
         echo [ERROR] Commit failed.
@@ -70,7 +71,7 @@ if errorlevel 1 (
 
 echo.
 echo ============================================
-echo   Done! Everything is synced with GitHub.
+echo   Done, everything is synced with GitHub.
 echo ============================================
 echo.
 pause
