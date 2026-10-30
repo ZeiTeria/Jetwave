@@ -27,59 +27,40 @@
 					class="navbar-toggler"
 					type="button"
 					data-bs-toggle="collapse"
-					data-bs-target="#navMain"
-				>
+					data-bs-target="#navMain">
+
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navMain">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link" href="index.html">
-								Beranda
-							</a>
+							<a class="nav-link" href="index.html">Beranda</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" href="02-A-marketplace.html">
-								Marketplace
-							</a>
+							<a class="nav-link active" href="02-A-marketplace.html">Marketplace</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="03-A-jual.html">
-								Jual
-							</a>
+							<a class="nav-link" href="03-A-jual.html">Jual</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="04-A-sewa.html">
-								Sewa
-							</a>
+							<a class="nav-link" href="04-A-sewa.html">Sewa</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="05-A-kategori.html">
-								Kategori
-							</a>
+							<a class="nav-link" href="05-A-kategori.html">Kategori</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="10-E-tentang.html">
-								Tentang
-							</a>
+							<a class="nav-link" href="10-E-tentang.html">Tentang</a>
 						</li>
 					</ul>
 					<ul class="navbar-nav align-items-lg-center gap-2">
 						<li class="nav-item">
-							<a class="nav-link" href="09-E-favorit.html">
-								<i class="bi bi-heart"></i>
-								Favorit
-							</a>
+							<a class="nav-link" href="09-E-favorit.html"><i class="bi bi-heart"></i>Favorit</a>
 						</li>
 						<li class="nav-item">
-							<a class="btn btn-outline-primary btn-sm" href="21-N-login.html">
-								Masuk
-							</a>
+							<a class="btn btn-outline-primary btn-sm" href="21-N-login.html">Masuk</a>
 						</li>
 						<li class="nav-item">
-							<a class="btn btn-primary btn-sm text-white" href="22-N-signup.html">
-								Daftar
-							</a>
+							<a class="btn btn-primary btn-sm text-white" href="22-N-signup.html">Daftar</a>
 						</li>
 					</ul>
 				</div>
@@ -88,12 +69,8 @@
 
 		<header class="bg-light py-4">
 			<div class="container">
-				<h1 class="h3 fw-bold mb-0">
-					Marketplace Jetski
-				</h1>
-				<p class="text-muted mb-0">
-					Temukan unit jual maupun sewa dari berbagai penjual terpercaya.
-				</p>
+				<h1 class="h3 fw-bold mb-0">Marketplace Jetski</h1>
+				<p class="text-muted mb-0">Temukan unit jual maupun sewa dari berbagai penjual terpercaya.</p>
 			</div>
 		</header>
 
@@ -101,24 +78,17 @@
 			<div class="row g-4">
 				<aside class="col-lg-3">
 					<form class="bg-light rounded-4 p-3" action="02-A-marketplace.html" method="get">
-						<h2 class="h6 fw-bold mb-3">
-							Filter Pencarian
-						</h2>
+						<h2 class="h6 fw-bold mb-3">Filter Pencarian</h2>
 						<div class="mb-3">
-							<label class="form-label small">
-								Kata Kunci
-							</label>
+							<label class="form-label small">Kata Kunci</label>
 							<input
 								type="search"
 								class="form-control"
 								name="q"
-								placeholder="Nama/merk jetski"
-							>
+								placeholder="Nama/merk jetski">
 						</div>
 						<div class="mb-3">
-							<label class="form-label small">
-								Kategori
-							</label>
+							<label class="form-label small">Kategori</label>
 							<select class="form-select" name="kategori">
 								<option>Semua Kategori</option>
 								<option>Sport</option>
@@ -128,31 +98,21 @@
 							</select>
 						</div>
 						<div class="mb-3">
-							<label class="form-label small d-block">
-								Tipe
-							</label>
+							<label class="form-label small d-block">Tipe</label>
 							<div class="form-check form-check-inline">
 								<input class="form-check-input" type="radio" name="tipe" id="tipeJual" checked>
-								<label class="form-check-label" for="tipeJual">
-									Dijual
-								</label>
+								<label class="form-check-label" for="tipeJual">Dijual</label>
 							</div>
 							<div class="form-check form-check-inline">
 								<input class="form-check-input" type="radio" name="tipe" id="tipeSewa">
-								<label class="form-check-label" for="tipeSewa">
-									Disewa
-								</label>
+								<label class="form-check-label" for="tipeSewa">Disewa</label>
 							</div>
 						</div>
 						<div class="mb-3">
-							<label class="form-label small">
-								Harga Maksimal
-							</label>
+							<label class="form-label small">Harga Maksimal</label>
 							<input type="range" class="form-range" min="0" max="500000000" name="harga">
 						</div>
-						<button type="submit" class="btn btn-primary text-white w-100">
-							Terapkan Filter
-						</button>
+						<button type="submit" class="btn btn-primary text-white w-100">Terapkan Filter</button>
 					</form>
 				</aside>
 
@@ -162,21 +122,11 @@
 							<div class="card-jetski h-100">
 								<img src="Img/jetski-1.svg" alt="Yamaha WaveRunner VX">
 								<div class="p-3">
-									<span class="badge bg-primary mb-2">
-										Dijual
-									</span>
-									<h3 class="h6 fw-bold">
-										Yamaha WaveRunner VX
-									</h3>
-									<p class="text-muted small mb-2">
-										Bali, Indonesia
-									</p>
-									<p class="fw-bold text-primary mb-3">
-										Rp 185.000.000
-									</p>
-									<a href="07-E-detail.html" class="btn btn-outline-primary btn-sm w-100">
-										Lihat Detail
-									</a>
+									<span class="badge bg-primary mb-2">Dijual</span>
+									<h3 class="h6 fw-bold">Yamaha WaveRunner VX</h3>
+									<p class="text-muted small mb-2">Bali, Indonesia</p>
+									<p class="fw-bold text-primary mb-3">Rp 185.000.000</p>
+									<a href="07-E-detail.html" class="btn btn-outline-primary btn-sm w-100">Lihat Detail</a>
 								</div>
 							</div>
 						</div>
@@ -184,8 +134,7 @@
 							<div class="card-jetski h-100">
 								<img src="Img/jetski-2.svg" alt="Sea-Doo Spark Trixx">
 								<div class="p-3">
-									<span class="badge bg-secondary mb-2">
-										Disewa
+									<span class="badge bg-secondary mb-2">Disewa
 									</span>
 									<h3 class="h6 fw-bold">
 										Sea-Doo Spark Trixx
@@ -338,15 +287,15 @@
 							<tbody>
 								<tr>
 									<td>Beli Jetski</td>
-									<td>Milik sendiri, bebas pakai kapan saja</td>
+									<td>Langsung jadi milik sendiri. Flash Sale!!</td>
 									<td>Rp 150jt - Rp 400jt</td>
 									<td>3-7 hari</td>
 								</tr>
 								<tr>
 									<td>Sewa Jetski</td>
-									<td>Hemat, cocok untuk liburan singkat</td>
+									<td>Opsi yang lebih hemat, cocok untuk liburan</td>
 									<td>Rp 300rb - Rp 600rb/jam</td>
-									<td>Instan setelah booking</td>
+									<td>Instan langsung setelah booking</td>
 								</tr>
 							</tbody>
 						</table>
@@ -364,7 +313,7 @@
 							JetWave
 						</h5>
 						<p class="text-white-50 small">
-							Marketplace jual-beli dan sewa jetski terpercaya di Indonesia.
+							Marketplace jual beli sewa jetski terpercaya di Indonesia.
 						</p>
 					</div>
 					<div class="col-lg-2 col-6">
@@ -423,11 +372,11 @@
 					</div>
 					<div class="col-lg-4">
 						<h6>
-							Tim Pengembang
+							Tim Pengembang Kelompok Sandal Terbang
 						</h6>
 						<ul class="list-unstyled small">
 							<li>
-								251111092 - Aaron Jacquinn (Ketua)
+								251111092 - Aaron Jacquinn 
 							</li>
 							<li>
 								251110049 - Endrico
@@ -446,7 +395,7 @@
 				</div>
 				<hr class="border-light-subtle">
 				<p class="text-center small mb-0">
-					&copy; 2026 JetWave. Tugas UTS Pengembangan Web Front-End.
+					&copy; 2026 JetWave. Kelompok Sandal Terbang
 				</p>
 			</div>
 		</footer>
