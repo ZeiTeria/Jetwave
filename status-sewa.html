@@ -1,0 +1,129 @@
+<!-- NIM: 251112139 | Nama: Ricky Candra | Halaman: status-sewa -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Status Sewa - JetWave</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="bg-white border-bottom py-3 mb-4">
+	<div class="container d-flex justify-content-between align-items-center">
+		<a href="index.html" class="logo-jetwave text-decoration-none">
+			<i class="bi bi-water"></i>
+			JetWave
+		</a>
+		<a href="riwayat-sewa.html" class="small text-decoration-none">
+			<i class="bi bi-arrow-left"></i>
+			Riwayat Sewa
+		</a>
+	</div>
+</header>
+
+<main class="container pb-5">
+	<div class="step-indicator">
+		<div class="step">
+			<span class="num">1</span>
+			<br>
+			Dibayar
+		</div>
+		<div class="step">
+			<span class="num">2</span>
+			<br>
+			Siap Diambil
+		</div>
+		<div class="step active">
+			<span class="num">3</span>
+			<br>
+			Digunakan
+		</div>
+		<div class="step">
+			<span class="num">4</span>
+			<br>
+			Dikembalikan
+		</div>
+	</div>
+
+	<div class="row g-4 justify-content-center">
+		<div class="col-lg-8">
+			<div class="card-jetski p-4 mb-4">
+				<div class="row align-items-center g-3">
+					<div class="col-md-3">
+						<img src="Img/jetski-2.svg" alt="Sea-Doo Spark Trixx" class="img-fluid rounded-3">
+					</div>
+					<div class="col-md-6">
+						<h1 class="h6 fw-bold mb-1">
+							Sea-Doo Spark Trixx
+						</h1>
+						<p class="small text-muted mb-1">
+							<i class="bi bi-geo-alt"></i>
+							Ancol, Jakarta
+						</p>
+						<p class="small text-muted mb-0">
+							30 Okt 2026, 09:00 - 12:00
+						</p>
+					</div>
+					<div class="col-md-3 text-md-end">
+						<span class="badge" style="background:var(--jw-pink,#ff2d78);">Sedang Berlangsung</span>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="h6 fw-bold mb-3">
+				Progres Sewa
+			</h2>
+			<ul class="list-group mb-4">
+				<li class="list-group-item d-flex justify-content-between">
+					Pembayaran dikonfirmasi
+					<i class="bi bi-check-circle-fill text-primary"></i>
+				</li>
+				<li class="list-group-item d-flex justify-content-between">
+					Unit siap diambil
+					<i class="bi bi-check-circle-fill text-primary"></i>
+				</li>
+				<li class="list-group-item d-flex justify-content-between">
+					Sedang digunakan
+					<i class="bi bi-hourglass-split text-muted"></i>
+				</li>
+				<li class="list-group-item d-flex justify-content-between">
+					Unit dikembalikan
+					<i class="bi bi-circle text-muted"></i>
+				</li>
+			</ul>
+
+			<form class="card-jetski p-4" action="ulasan.html" method="get">
+				<h2 class="h6 fw-bold mb-3">
+					Konfirmasi Pengembalian Unit
+				</h2>
+				<div class="row g-3">
+					<div class="col-md-6">
+						<label class="form-label small">Kondisi Unit Saat Dikembalikan</label>
+						<select class="form-select" name="kondisi">
+							<option>Baik, tidak ada kerusakan</option>
+							<option>Ada kerusakan ringan</option>
+						</select>
+					</div>
+					<div class="col-md-6">
+						<label class="form-label small">Jam Pengembalian</label>
+						<input type="time" class="form-control" name="jam_kembali">
+					</div>
+					<div class="col-12">
+						<label class="form-label small">Catatan (opsional)</label>
+						<textarea class="form-control" name="catatan" rows="2"></textarea>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary text-white w-100 mt-4">
+					Selesaikan & Beri Ulasan
+				</button>
+			</form>
+		</div>
+	</div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
