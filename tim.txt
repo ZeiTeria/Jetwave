@@ -1,0 +1,41 @@
+TUGAS KELOMPOK UTS - PENGEMBANGAN WEB FRONT-END 2026/27
+
+(a) Anggota Tim
+1. NIM: ..........  Nama: Aaron .......... (ketua)
+2. NIM: ..........  Nama: ....................
+3. NIM: ..........  Nama: ....................
+4. NIM: ..........  Nama: ....................
+5. NIM: ..........  Nama: ....................
+
+(b) Tema/Topik Web
+JetWave - marketplace jual-beli dan sewa jetski. Pengguna bisa mencari jetski
+dijual atau disewakan, melihat detail unit dan profil penjual, booking sewa,
+checkout pembelian, membayar, memantau status sewa, dan memberi ulasan.
+Penjual bisa mengelola listing, pesanan, chat, dan notifikasi lewat dashboard.
+
+(c) Jumlah Layout dan Halaman
+Jumlah layout : 3
+Jumlah halaman: 30 (6 halaman per anggota x 5 anggota)
+
+Layout 1 - Marketplace publik (navbar + hero/katalog + footer), 10 halaman:
+  index, marketplace, jual, sewa, kategori, pencarian, detail, penjual, favorit, tentang
+Layout 2 - Dashboard pengguna (sidebar menu + area kerja), 10 halaman:
+  dashboard, profil, pesanan, riwayat-sewa, listing-saya, tambah-listing,
+  edit-listing, chat, notifikasi, pengaturan
+Layout 3 - Auth & transaksi (form terfokus + langkah checkout), 10 halaman:
+  login, signup, lupa-password, booking, checkout-beli, checkout-sewa,
+  pembayaran, konfirmasi, status-sewa, ulasan
+
+Semua halaman ada pada screenshot JPEG (01-index.jpg s.d. 30-ulasan.jpg).
+
+(d) Nilai yang Diharapkan: A (90)
+Alasan:
+- Memenuhi semua ketentuan: 3 layout berbeda, 30 halaman saling terhubung
+  lewat navbar, sidebar, dan footer.
+- Setiap halaman memuat list, form/tabel, gambar, dan link, memakai HTML5
+  semantik serta Bootstrap 5 (komponen form, tombol, tabel).
+- Tema warna dan custom CSS sendiri (css/style.css, css/layouts.css),
+  bukan warna standar Bootstrap.
+- Responsif di desktop, tablet, dan smartphone.
+- Nilai tambah JavaScript: filter dan pencarian katalog, modal preview unit,
+  tombol lihat password, tombol favorit, dan pesan konfirmasi form.
