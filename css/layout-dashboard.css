@@ -13,3 +13,35 @@
 	background: var(--c-pink);
 	color: #fff;
 }
+
+.dashboard-topbar {
+	position: sticky;
+	top: 0;
+	z-index: 20;
+}
+@media (max-width: 991.98px) {
+	.sidebar-jetstar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		z-index: 40;
+		transform: translateX(-100%);
+		transition: transform .25s ease;
+		display: block !important;
+		overflow-y: auto;
+	}
+	.dashboard-check:checked ~ .d-flex .sidebar-jetstar {
+		transform: translateX(0);
+	}
+	.dashboard-overlay {
+		display: none;
+		position: fixed;
+		inset: 0;
+		background: rgba(0, 0, 0, .5);
+		z-index: 35;
+	}
+	.dashboard-check:checked ~ .d-flex .dashboard-overlay {
+		display: block;
+	}
+}

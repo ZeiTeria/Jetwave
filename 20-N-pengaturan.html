@@ -10,7 +10,18 @@
 	</head>
 
 	<body>
+		<input type="checkbox" id="dashboardToggle" class="navbar-check dashboard-check">
+		<div class="dashboard-topbar d-flex d-lg-none align-items-center justify-content-between p-3 border-bottom bg-white">
+			<a href="index.html" class="logo-jetstar text-decoration-none">
+				<i class="bi bi-water"></i> JetStar
+			</a>
+			<label for="dashboardToggle" class="navbar-toggler">
+				<span class="navbar-toggler-icon"></span>
+			</label>
+		</div>
+
 		<div class="d-flex">
+			<label for="dashboardToggle" class="dashboard-overlay d-lg-none"></label>
 			<aside class="sidebar-jetstar p-3 d-none d-lg-block">
 				<a href="index.html" class="d-block logo-jetstar mb-4 text-decoration-none">
 					<i class="bi bi-water"></i> JetStar

@@ -294,6 +294,9 @@ small, .small {
 	.d-lg-block {
 		display: block;
 	}
+	.d-lg-none {
+		display: none;
+	}
 }
 .flex-column {
 	flex-direction: column;
