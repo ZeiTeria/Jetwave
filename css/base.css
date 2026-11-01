@@ -88,7 +88,6 @@ body {
 	font-family: "Poppins", sans-serif;
 	color: var(--c-text);
 	line-height: 1.5;
-	-webkit-font-smoothing: antialiased;
 }
 
 h1 {
@@ -178,6 +177,7 @@ small, .small {
 .text-warning {
 	color: #c98a00;
 }
+
 /*Layout*/
 .container {
 	width: 100%;
@@ -447,7 +447,7 @@ small, .small {
 .rounded-circle {
 	border-radius: 50%;
 }
-.rounded-pill {
+.rounded-pill, .btn.rounded-pill {
 	border-radius: 50rem;
 }
 .shadow-lg {
@@ -762,7 +762,7 @@ a .card-jetski:hover,
 	padding: 1rem;
 }
 
-.logo-jetwave {
+.logo-jetstar {
 	font-weight: 700;
 	font-size: 1.4rem;
 	color: var(--c-pink);
@@ -791,7 +791,8 @@ a .card-jetski:hover,
 .navbar-brand {
 	display: inline-flex;
 	align-items: center;
-	gap: .4rem;
+	padding: .1rem 0rem;
+	gap: .5rem;
 	text-decoration: none;
 }
 .navbar-nav {

@@ -1,15 +1,15 @@
-.sidebar-jetwave {
+.sidebar-jetstar {
 	width: 240px;
 	min-height: 100vh;
 	background: var(--c-navy);
 	color: #fff;
 	flex-shrink: 0;
 }
-.sidebar-jetwave .nav-link {
+.sidebar-jetstar .nav-link {
 	color: #c9d3df;
 }
-.sidebar-jetwave .nav-link.active,
-.sidebar-jetwave .nav-link:hover {
+.sidebar-jetstar .nav-link.active,
+.sidebar-jetstar .nav-link:hover {
 	background: var(--c-pink);
 	color: #fff;
 }

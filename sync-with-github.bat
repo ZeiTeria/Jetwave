@@ -4,7 +4,7 @@ setlocal
 cd /d "%~dp0"
 
 echo ============================================
-echo   JetWave - Sync with GitHub
+echo   JetStar - Sync with GitHub
 echo ============================================
 echo.
 

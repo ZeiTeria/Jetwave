@@ -1,22 +1,22 @@
 /*Navigation Bar*/
-.navbar-jetwave {
+.navbar-jetstar {
 	background: #fff;
 }
-.navbar-jetwave .nav-link {
+.navbar-jetstar .nav-link {
 	font-weight: 500;
 	color: #333;
 }
-.navbar-jetwave .nav-link.active,
-.navbar-jetwave .nav-link:hover {
+.navbar-jetstar .nav-link.active,
+.navbar-jetstar .nav-link:hover {
 	color: var(--c-pink);
 }
 
-.hero-jetwave {
+.hero-jetstar {
 	background: linear-gradient(135deg, var(--c-pink) 0%, #ff7aa8 100%);
 	color: #fff;
 	border-radius: 0 0 2rem 2rem;
 }
-.hero-jetwave img {
+.hero-jetstar img {
 	border-radius: var(--r-lg);
 }
 
@@ -31,7 +31,7 @@
 }
 
 /*Footer*/
-.footer-jetwave {
+.footer-jetstar {
 	background: var(--c-navy);
 }
 .footer-link {

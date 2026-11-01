@@ -8,7 +8,7 @@ TUGAS KELOMPOK UTS - PENGEMBANGAN WEB FRONT-END 2026/27
 5. NIM: 251112139 Nama: Ricky Candra
 
 (b) Tema/Topik Web
-JetWave - marketplace jual-beli dan sewa jetski. User bisa mencari jetski
+JetStar - marketplace jual-beli dan sewa jetski. User bisa mencari jetski
 dijual atau disewakan, melihat detail unit dan profil penjual, booking sewa,
 checkout pembelian, membayar, memantau status sewa, dan memberi ulasan.
 Penjual bisa mengelola listing, pesanan, chat, dan notifikasi lewat dashboard.
