@@ -1,0 +1,125 @@
+/* JetWave - layout-transaksi.css
+Khusus 10 halaman Layout 3 (auth & transaksi): login, signup,
+lupa-password, booking, checkout-beli, checkout-sewa, pembayaran,
+konfirmasi, status-sewa, ulasan. Butuh base.css lebih dulu. */
+
+.auth-wrapper {
+	background: var(--c-pink-light);
+}
+.auth-card {
+	max-width: 460px;
+	width: 100%;
+	border-radius: var(--r-lg);
+	background: var(--c-white);
+	box-shadow: var(--shadow);
+}
+
+.step-indicator {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+.step-indicator .step {
+	flex: 1;
+	text-align: center;
+	color: #aaa;
+	font-size: .85rem;
+}
+.step-indicator .step.active {
+	color: var(--c-pink);
+	font-weight: 600;
+}
+.step-indicator .step .num {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background: #eee;
+	margin-bottom: .3rem;
+}
+.step-indicator .step.active .num {
+	background: var(--c-pink);
+	color: #fff;
+}
+
+/* Metode pembayaran (27-R-pembayaran.html) */
+.payment-option {
+	display: flex;
+	align-items: center;
+	gap: .6rem;
+	border: 1px solid var(--c-border);
+	border-radius: var(--r);
+	padding: .9rem 1rem;
+	margin-bottom: .6rem;
+	cursor: pointer;
+}
+.payment-option:has(input:checked) {
+	border-color: var(--c-pink);
+	background: var(--c-pink-light);
+}
+.payment-panel {
+	display: none;
+	border-top: 1px solid var(--c-border);
+	margin-top: 1rem;
+	padding-top: 1rem;
+}
+#formPembayaran:has(#metodeVA:checked) #panel-va,
+#formPembayaran:has(#metodeKartu:checked) #panel-kartu,
+#formPembayaran:has(#metodeEwallet:checked) #panel-ewallet {
+	display: block;
+}
+
+.bank-picker {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .5rem;
+}
+.bank-option {
+	position: relative;
+	border: 1px solid var(--c-border);
+	border-radius: var(--r-sm);
+	padding: .5rem 1.1rem;
+	font-size: .9rem;
+	cursor: pointer;
+}
+.bank-option input {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+.bank-option:has(input:checked) {
+	border-color: var(--c-pink);
+	background: var(--c-pink-light);
+	font-weight: 600;
+}
+
+.va-bank-field {
+	display: none;
+	margin-top: .75rem;
+}
+#panel-va:has(#bankBCA:checked) #vaFieldBCA,
+#panel-va:has(#bankMandiri:checked) #vaFieldMandiri,
+#panel-va:has(#bankBNI:checked) #vaFieldBNI,
+#panel-va:has(#bankBRI:checked) #vaFieldBRI {
+	display: block;
+}
+.va-prefix {
+	display: inline-flex;
+	align-items: center;
+	padding: 0 .8rem;
+	background: var(--c-light);
+	border: 1px solid var(--c-border);
+	border-right: 0;
+	border-radius: var(--r-sm) 0 0 var(--r-sm);
+	font-weight: 600;
+	color: var(--c-muted);
+	white-space: nowrap;
+}
+.va-input-group {
+	display: flex;
+}
+.va-input-group .form-control {
+	border-radius: 0 var(--r-sm) var(--r-sm) 0;
+}

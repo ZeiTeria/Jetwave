@@ -1,0 +1,43 @@
+/*Navigation Bar*/
+.navbar-jetwave {
+	background: #fff;
+}
+.navbar-jetwave .nav-link {
+	font-weight: 500;
+	color: #333;
+}
+.navbar-jetwave .nav-link.active,
+.navbar-jetwave .nav-link:hover {
+	color: var(--c-pink);
+}
+
+.hero-jetwave {
+	background: linear-gradient(135deg, var(--c-pink) 0%, #ff7aa8 100%);
+	color: #fff;
+	border-radius: 0 0 2rem 2rem;
+}
+.hero-jetwave img {
+	border-radius: var(--r-lg);
+}
+
+/*Profil Penjual*/
+.avatar-ring {
+	border: 3px solid var(--c-white);
+}
+
+/*Tabel Spesifikasi*/
+.table-bordered tbody th {
+	width: 25%;
+}
+
+/*Footer*/
+.footer-jetwave {
+	background: var(--c-navy);
+}
+.footer-link {
+	color: #c9d3df;
+	text-decoration: none;
+}
+.footer-link:hover {
+	color: var(--c-pink);
+}

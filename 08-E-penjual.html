@@ -5,9 +5,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Profil Penjual - JetWave</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout-publik.css">
 </head>
 <body>
 
@@ -17,15 +17,11 @@
 			<i class="bi bi-water"></i>
 			JetWave
 		</a>
-		<button
-			class="navbar-toggler"
-			type="button"
-			data-bs-toggle="collapse"
-			data-bs-target="#navMain"
-		>
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navMain">
+		<input type="checkbox" id="navMain" class="navbar-check">
+			<label for="navMain" class="navbar-toggler">
+				<span class="navbar-toggler-icon"></span>
+			</label>
+			<div class="navbar-collapse">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item">
 					<a class="nav-link" href="index.html">Beranda</a>
@@ -65,8 +61,8 @@
 </nav>
 
 <header class="hero-jetwave py-5">
-	<div class="container d-flex align-items-center gap-4 flex-wrap">
-		<img src="Img/avatar.svg" alt="Avatar Budi Santoso" width="90" class="rounded-circle border border-3 border-white">
+	<div class="container d-flex align-items-center gap-3 flex-wrap">
+		<img src="Img/avatar.svg" alt="Avatar Budi Santoso" width="90" class="rounded-circle avatar-ring">
 		<div>
 			<h1 class="h3 fw-bold mb-1">
 				Budi Santoso
@@ -122,7 +118,7 @@
 			<tbody>
 				<tr>
 					<td>
-						<img src="Img/jetski-1.svg" alt="Yamaha WaveRunner VX" width="60" class="rounded">
+						<img src="Img/82_2025_vx1050f-b_wh_na_11_yy_35-large.png" alt="Yamaha WaveRunner VX" width="60" class="rounded">
 					</td>
 					<td>Yamaha WaveRunner VX</td>
 					<td>
@@ -135,7 +131,7 @@
 				</tr>
 				<tr>
 					<td>
-						<img src="Img/jetski-2.svg" alt="Sea-Doo Spark Trixx" width="60" class="rounded">
+						<img src="Img/OIP.webp" alt="Sea-Doo Spark Trixx" width="60" class="rounded">
 					</td>
 					<td>Sea-Doo Spark Trixx</td>
 					<td>
@@ -154,7 +150,7 @@
 		Ulasan untuk Penjual
 	</h2>
 	<ul class="list-unstyled">
-		<li class="d-flex gap-3 mb-3 pb-3 border-bottom">
+		<li class="d-flex gap-3 mb-3 border-bottom">
 			<img src="Img/avatar.svg" alt="Avatar Reza" width="44" class="rounded-circle">
 			<div>
 				<p class="fw-semibold mb-0">
@@ -233,6 +229,5 @@
 	</div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
