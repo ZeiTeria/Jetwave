@@ -16,7 +16,7 @@
 	color: #fff;
 	border-radius: 0 0 2rem 2rem;
 }
-.hero-jetstar img {
+.hero-jetstar img:not(.rounded-circle) {
 	border-radius: var(--r-lg);
 }
 

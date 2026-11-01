@@ -132,9 +132,6 @@ small, .small {
 .fs-4 {
 	font-size: 1.5rem;
 }
-.fs-5 {
-	font-size: 1.25rem;
-}
 .fw-semibold {
 	font-weight: 600;
 }
@@ -192,9 +189,6 @@ small, .small {
 }
 .min-vh-100 {
 	min-height: 100vh;
-}
-.overflow-hidden {
-	overflow: hidden;
 }
 .overflow-auto {
 	overflow: auto;
@@ -475,29 +469,12 @@ small, .small {
 	max-width: 100%;
 	height: auto;
 }
-.ratio {
-	position: relative;
-	width: 100%;
-}
-.ratio::before {
-	content: "";
-	display: block;
-	padding-top: 56.25%;
-}
-.ratio-16x9::before {
-	padding-top: 56.25%;
-}
-.ratio > * {
-	position: absolute;
-	inset: 0;
-	width: 100%;
-	height: 100%;
-}
 .list-unstyled {
 	list-style: none;
 	padding-left: 0;
 }
 
+/*Button*/
 .btn {
 	display: inline-flex;
 	align-items: center;
@@ -557,6 +534,7 @@ small, .small {
 	pointer-events: none;
 }
 
+/*Forms*/
 .form-label {
 	display: block;
 	font-weight: 500;
@@ -625,23 +603,25 @@ small, .small {
 	font-size: .8rem;
 	font-weight: 600;
 	border-radius: var(--r-sm);
-	color: var(--c-white);
 }
 .badge.bg-primary {
 	background: var(--c-pink);
+	color: var(--c-white);
 }
 .badge.bg-secondary {
 	background: var(--c-secondary);
+	color: var(--c-white);
 }
 .badge.bg-success {
 	background: var(--c-success);
+	color: var(--c-white);
 }
 .badge.bg-warning {
 	background: var(--c-warning);
 	color: #5c4400;
 }
 
-/*Tabel*/
+/*Table*/
 .table-responsive {
 	overflow-x: auto;
 }
@@ -673,7 +653,7 @@ small, .small {
 	vertical-align: middle;
 }
 
-/*List & Breadcrumb*/
+/*List*/
 .list-group {
 	list-style: none;
 	padding-left: 0;
@@ -753,7 +733,7 @@ a .card-jetski:hover,
 	transform: translateY(-4px);
 	box-shadow: 0 10px 24px rgba(255, 45, 120, .2);
 }
-.card-jetski img {
+.card-jetski > img:not(.rounded-circle) {
 	height: 180px;
 	object-fit: cover;
 	width: 100%;
@@ -784,9 +764,12 @@ a .card-jetski:hover,
 	color: inherit;
 }
 .navbar {
+	padding-block: .75rem;
+}
+.navbar > .container {
 	display: flex;
 	align-items: center;
-	padding-block: .75rem;
+	flex-wrap: wrap;
 }
 .navbar-brand {
 	display: inline-flex;
@@ -836,9 +819,6 @@ a .card-jetski:hover,
 	pointer-events: none;
 }
 @media (max-width: 991.98px) {
-	.navbar-expand-lg {
-		flex-wrap: wrap;
-	}
 	.navbar-expand-lg .navbar-toggler {
 		display: inline-flex;
 	}
@@ -854,7 +834,7 @@ a .card-jetski:hover,
 	}
 }
 @media (min-width: 992px) {
-	.navbar-expand-lg {
+	.navbar-expand-lg > .container {
 		flex-wrap: nowrap;
 	}
 	.navbar-expand-lg .navbar-collapse {
