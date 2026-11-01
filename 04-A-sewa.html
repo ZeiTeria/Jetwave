@@ -5,74 +5,53 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Sewa Jetski - JetStar</title>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-		>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 		<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/layout-publik.css">
+		<link rel="stylesheet" href="css/layout-publik.css">
 	</head>
-	<body>
 
+	<body>
 		<nav class="navbar navbar-expand-lg navbar-jetstar sticky-top">
 			<div class="container">
 				<a class="navbar-brand logo-jetstar" href="index.html">
-					<i class="bi bi-water"></i>
-					JetStar
+					<i class="bi bi-water"></i> JetStar
 				</a>
 				<input type="checkbox" id="navMain" class="navbar-check">
-			<label for="navMain" class="navbar-toggler">
-				<span class="navbar-toggler-icon"></span>
-			</label>
-			<div class="navbar-collapse">
+				<label for="navMain" class="navbar-toggler">
+					<span class="navbar-toggler-icon"></span>
+				</label>
+				<div class="navbar-collapse">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link" href="index.html">
-								Beranda
-							</a>
+							<a class="nav-link" href="index.html">Beranda</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="02-A-marketplace.html">
-								Marketplace
-							</a>
+							<a class="nav-link" href="02-A-marketplace.html">Marketplace</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="03-A-jual.html">
-								Jual
-							</a>
+							<a class="nav-link" href="03-A-jual.html">Jual</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" href="04-A-sewa.html">
-								Sewa
-							</a>
+							<a class="nav-link active" href="04-A-sewa.html">Sewa</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="05-A-kategori.html">
-								Kategori
-							</a>
+							<a class="nav-link" href="05-A-kategori.html">Kategori</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="10-E-tentang.html">
-								Tentang
-							</a>
+							<a class="nav-link" href="10-E-tentang.html">Tentang</a>
 						</li>
 					</ul>
 					<ul class="navbar-nav align-items-lg-center gap-2">
 						<li class="nav-item">
 							<a class="nav-link" href="09-E-favorit.html">
-								<i class="bi bi-heart"></i>
-								Favorit
+								<i class="bi bi-heart"></i> Favorit
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="btn btn-outline-primary btn-sm" href="21-N-login.html">
-								Masuk
-							</a>
+							<a class="btn btn-outline-primary btn-sm" href="21-N-login.html">Masuk</a>
 						</li>
 						<li class="nav-item">
-							<a class="btn btn-primary btn-sm text-white" href="22-N-signup.html">
-								Daftar
-							</a>
+							<a class="btn btn-primary btn-sm text-white" href="22-N-signup.html">Daftar</a>
 						</li>
 					</ul>
 				</div>
@@ -81,14 +60,10 @@
 
 		<section class="hero-jetstar py-5">
 			<div class="container">
-				<h1 class="fw-bold mb-3 text-center">
-					Sewa Jetski untuk Liburan Seru
-				</h1>
+				<h1 class="fw-bold mb-3 text-center">Sewa Jetski untuk Liburan Seru</h1>
 				<form class="row g-2 bg-white rounded-4 p-3 text-dark" action="24-N-booking.html" method="get">
 					<div class="col-md-3">
-						<label class="form-label small mb-1">
-							Lokasi
-						</label>
+						<label class="form-label small mb-1">Lokasi</label>
 						<select class="form-select" name="lokasi">
 							<option>Bali</option>
 							<option>Jakarta (Ancol)</option>
@@ -96,50 +71,32 @@
 						</select>
 					</div>
 					<div class="col-md-3">
-						<label class="form-label small mb-1">
-							Tanggal Sewa
-						</label>
+						<label class="form-label small mb-1">Tanggal Sewa</label>
 						<input type="date" class="form-control" name="tanggal">
 					</div>
 					<div class="col-md-3">
-						<label class="form-label small mb-1">
-							Durasi (jam)
-						</label>
+						<label class="form-label small mb-1">Durasi (jam)</label>
 						<input type="number" class="form-control" name="durasi" min="1" value="1">
 					</div>
 					<div class="col-md-3 d-flex align-items-end">
-						<button type="submit" class="btn btn-primary text-white w-100">
-							Cari Unit Sewa
-						</button>
+						<button type="submit" class="btn btn-primary text-white w-100">Cari Unit Sewa</button>
 					</div>
 				</form>
 			</div>
 		</section>
 
 		<section class="container py-5">
-			<h2 class="h5 fw-bold mb-4">
-				Unit Tersedia untuk Disewa
-			</h2>
+			<h2 class="h5 fw-bold mb-4">Unit Tersedia untuk Disewa</h2>
 			<div class="row g-4">
 				<div class="col-md-4">
 					<div class="card-jetski h-100">
 						<img src="Img/OIP.webp" alt="Sea-Doo Spark Trixx">
 						<div class="p-3">
-							<span class="badge bg-secondary mb-2">
-								Disewa
-							</span>
-							<h3 class="h6 fw-bold">
-								Sea-Doo Spark Trixx
-							</h3>
-							<p class="text-muted small mb-2">
-								Ancol, Jakarta
-							</p>
-							<p class="fw-bold text-primary mb-3">
-								Rp 450.000 / jam
-							</p>
-							<a href="07-E-detail.html" class="btn btn-outline-primary btn-sm w-100">
-								Lihat Detail
-							</a>
+							<span class="badge bg-secondary mb-2">Disewa</span>
+							<h3 class="h6 fw-bold">Sea-Doo Spark Trixx</h3>
+							<p class="text-muted small mb-2">Ancol, Jakarta</p>
+							<p class="fw-bold text-primary mb-3">Rp 450.000 / jam</p>
+							<a href="07-E-detail.html" class="btn btn-outline-primary btn-sm w-100">Lihat Detail</a>
 						</div>
 					</div>
 				</div>
@@ -147,21 +104,11 @@
 					<div class="card-jetski h-100">
 						<img src="Img/fx-cruiser-ho-a.png" alt="Yamaha FX Cruiser">
 						<div class="p-3">
-							<span class="badge bg-secondary mb-2">
-								Disewa
-							</span>
-							<h3 class="h6 fw-bold">
-								Yamaha FX Cruiser
-							</h3>
-							<p class="text-muted small mb-2">
-								Nusa Dua, Bali
-							</p>
-							<p class="fw-bold text-primary mb-3">
-								Rp 500.000 / jam
-							</p>
-							<a href="07-E-detail.html" class="btn btn-outline-primary btn-sm w-100">
-								Lihat Detail
-							</a>
+							<span class="badge bg-secondary mb-2">Disewa</span>
+							<h3 class="h6 fw-bold">Yamaha FX Cruiser</h3>
+							<p class="text-muted small mb-2">Nusa Dua, Bali</p>
+							<p class="fw-bold text-primary mb-3">Rp 500.000 / jam</p>
+							<a href="07-E-detail.html" class="btn btn-outline-primary btn-sm w-100">Lihat Detail</a>
 						</div>
 					</div>
 				</div>
@@ -169,21 +116,11 @@
 					<div class="card-jetski h-100">
 						<img src="Img/2026-Kawasaki-STX-160R-studio-16x9-1-1536x864.jpg" alt="Kawasaki STX 160">
 						<div class="p-3">
-							<span class="badge bg-secondary mb-2">
-								Disewa
-							</span>
-							<h3 class="h6 fw-bold">
-								Kawasaki STX 160
-							</h3>
-							<p class="text-muted small mb-2">
-								Pangandaran, Jabar
-							</p>
-							<p class="fw-bold text-primary mb-3">
-								Rp 350.000 / jam
-							</p>
-							<a href="07-E-detail.html" class="btn btn-outline-primary btn-sm w-100">
-								Lihat Detail
-							</a>
+							<span class="badge bg-secondary mb-2">Disewa</span>
+							<h3 class="h6 fw-bold">Kawasaki STX 160</h3>
+							<p class="text-muted small mb-2">Pangandaran, Jabar</p>
+							<p class="fw-bold text-primary mb-3">Rp 350.000 / jam</p>
+							<a href="07-E-detail.html" class="btn btn-outline-primary btn-sm w-100">Lihat Detail</a>
 						</div>
 					</div>
 				</div>
@@ -193,28 +130,16 @@
 		<section class="container pb-5">
 			<div class="row g-4">
 				<div class="col-lg-6">
-					<h2 class="h5 fw-bold mb-3">
-						Ketentuan Sewa
-					</h2>
+					<h2 class="h5 fw-bold mb-3">Ketentuan Sewa</h2>
 					<ul>
-						<li>
-							Penyewa wajib berusia minimal 18 tahun dan membawa KTP asli.
-						</li>
-						<li>
-							Wajib menggunakan rompi pelampung selama berkendara.
-						</li>
-						<li>
-							Deposit akan dikembalikan jika unit kembali tanpa kerusakan.
-						</li>
-						<li>
-							Pembatalan gratis hingga 2 jam sebelum jadwal sewa.
-						</li>
+						<li>Penyewa wajib berusia minimal 18 tahun dan membawa KTP asli.</li>
+						<li>Wajib menggunakan rompi pelampung selama berkendara.</li>
+						<li>Deposit akan dikembalikan jika unit kembali tanpa kerusakan.</li>
+						<li>Pembatalan gratis hingga 2 jam sebelum jadwal sewa.</li>
 					</ul>
 				</div>
 				<div class="col-lg-6">
-					<h2 class="h5 fw-bold mb-3">
-						Paket Sewa
-					</h2>
+					<h2 class="h5 fw-bold mb-3">Paket Sewa</h2>
 					<div class="table-responsive">
 						<table class="table table-bordered align-middle">
 							<thead class="table-light">
@@ -252,96 +177,58 @@
 				<div class="row g-4">
 					<div class="col-lg-4">
 						<h5 class="logo-jetstar">
-							<i class="bi bi-water"></i>
-							JetStar
+							<i class="bi bi-water"></i> JetStar
 						</h5>
-						<p class="text-white-50 small">
-							Marketplace jual-beli dan sewa jetski terpercaya di Indonesia.
-						</p>
+						<p class="text-white-50 small">Marketplace jual-beli dan sewa jetski terpercaya di Indonesia.</p>
 					</div>
 					<div class="col-lg-2 col-6">
-						<h6>
-							Marketplace
-						</h6>
+						<h6>Marketplace</h6>
 						<ul class="list-unstyled small">
 							<li>
-								<a href="02-A-marketplace.html" class="footer-link">
-									Semua Listing
-								</a>
+								<a href="02-A-marketplace.html" class="footer-link">Semua Listing</a>
 							</li>
 							<li>
-								<a href="03-A-jual.html" class="footer-link">
-									Jual Jetski
-								</a>
+								<a href="03-A-jual.html" class="footer-link">Jual Jetski</a>
 							</li>
 							<li>
-								<a href="04-A-sewa.html" class="footer-link">
-									Sewa Jetski
-								</a>
+								<a href="04-A-sewa.html" class="footer-link">Sewa Jetski</a>
 							</li>
 							<li>
-								<a href="05-A-kategori.html" class="footer-link">
-									Kategori
-								</a>
+								<a href="05-A-kategori.html" class="footer-link">Kategori</a>
 							</li>
 						</ul>
 					</div>
 					<div class="col-lg-2 col-6">
-						<h6>
-							Akun
-						</h6>
+						<h6>Akun</h6>
 						<ul class="list-unstyled small">
 							<li>
-								<a href="21-N-login.html" class="footer-link">
-									Masuk
-								</a>
+								<a href="21-N-login.html" class="footer-link">Masuk</a>
 							</li>
 							<li>
-								<a href="22-N-signup.html" class="footer-link">
-									Daftar
-								</a>
+								<a href="22-N-signup.html" class="footer-link">Daftar</a>
 							</li>
 							<li>
-								<a href="11-E-dashboard.html" class="footer-link">
-									Dashboard
-								</a>
+								<a href="11-E-dashboard.html" class="footer-link">Dashboard</a>
 							</li>
 							<li>
-								<a href="09-E-favorit.html" class="footer-link">
-									Favorit
-								</a>
+								<a href="09-E-favorit.html" class="footer-link">Favorit</a>
 							</li>
 						</ul>
 					</div>
 					<div class="col-lg-4">
-						<h6>
-							Tim Pengembang
-						</h6>
+						<h6>Tim Pengembang</h6>
 						<ul class="list-unstyled small">
-							<li>
-								251111092 - Aaron Jacquinn (Ketua)
-							</li>
-							<li>
-								251110049 - Endrico
-							</li>
-							<li>
-								251111929 - Jovingko
-							</li>
-							<li>
-								251111265 - Nicholas Alvin Willie
-							</li>
-							<li>
-								251112139 - Ricky Candra
-							</li>
+							<li>251111092 - Aaron Jacquinn (Ketua)</li>
+							<li>251110049 - Endrico</li>
+							<li>251111929 - Jovingko</li>
+							<li>251111265 - Nicholas Alvin Willie</li>
+							<li>251112139 - Ricky Candra</li>
 						</ul>
 					</div>
 				</div>
 				<hr class="border-light-subtle">
-				<p class="text-center small mb-0">
-					&copy; 2026 JetStar. Tugas UTS Pengembangan Web Front-End.
-				</p>
+				<p class="text-center small mb-0">&copy; 2026 JetStar. Tugas UTS Pengembangan Web Front-End.</p>
 			</div>
 		</footer>
-
 	</body>
 </html>

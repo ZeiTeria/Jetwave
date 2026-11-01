@@ -1,150 +1,135 @@
 <!-- NIM: 251110049 | Nama: Endrico | Halaman: profil -->
 <!DOCTYPE html>
 <html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Profil Saya - JetStar</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/layout-dashboard.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Profil Saya - JetStar</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/layout-dashboard.css">
+	</head>
 
-<div class="d-flex">
-	<aside class="sidebar-jetstar p-3 d-none d-lg-block">
-		<a href="index.html" class="d-block logo-jetstar mb-4 text-decoration-none">
-			<i class="bi bi-water"></i>
-			JetStar
-		</a>
-		<ul class="nav nav-pills flex-column gap-1">
-			<li class="nav-item">
-				<a class="nav-link" href="11-E-dashboard.html">
-					<i class="bi bi-speedometer2 me-2"></i>
-					Dashboard
+	<body>
+		<div class="d-flex">
+			<aside class="sidebar-jetstar p-3 d-none d-lg-block">
+				<a href="index.html" class="d-block logo-jetstar mb-4 text-decoration-none">
+					<i class="bi bi-water"></i> JetStar
 				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link active" href="12-E-profil.html">
-					<i class="bi bi-person-circle me-2"></i>
-					Profil
+				<ul class="nav nav-pills flex-column gap-1">
+					<li class="nav-item">
+						<a class="nav-link" href="11-E-dashboard.html">
+							<i class="bi bi-speedometer2 me-2"></i> Dashboard
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="12-E-profil.html">
+							<i class="bi bi-person-circle me-2"></i> Profil
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="13-J-pesanan.html">
+							<i class="bi bi-receipt me-2"></i> Pesanan
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="14-J-riwayat-sewa.html">
+							<i class="bi bi-clock-history me-2"></i> Riwayat Sewa
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="15-J-listing-saya.html">
+							<i class="bi bi-list-ul me-2"></i> Listing Saya
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="18-J-chat.html">
+							<i class="bi bi-chat-dots me-2"></i> Chat
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="19-N-notifikasi.html">
+							<i class="bi bi-bell me-2"></i> Notifikasi
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="20-N-pengaturan.html">
+							<i class="bi bi-gear me-2"></i> Pengaturan
+						</a>
+					</li>
+				</ul>
+				<hr>
+				<a href="index.html" class="nav-link">
+					<i class="bi bi-box-arrow-left me-2"></i> Keluar
 				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="13-J-pesanan.html">
-					<i class="bi bi-receipt me-2"></i>
-					Pesanan
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="14-J-riwayat-sewa.html">
-					<i class="bi bi-clock-history me-2"></i>
-					Riwayat Sewa
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="15-J-listing-saya.html">
-					<i class="bi bi-list-ul me-2"></i>
-					Listing Saya
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="18-J-chat.html">
-					<i class="bi bi-chat-dots me-2"></i>
-					Chat
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="19-N-notifikasi.html">
-					<i class="bi bi-bell me-2"></i>
-					Notifikasi
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="20-N-pengaturan.html">
-					<i class="bi bi-gear me-2"></i>
-					Pengaturan
-				</a>
-			</li>
-		</ul>
-		<hr>
-		<a href="index.html" class="nav-link">
-			<i class="bi bi-box-arrow-left me-2"></i>
-			Keluar
-		</a>
-	</aside>
+			</aside>
 
-	<main class="flex-grow-1 p-4">
-		<h1 class="h3 fw-bold mb-4">
-			Profil Saya
-		</h1>
+			<main class="flex-grow-1 p-4">
+				<h1 class="h3 fw-bold mb-4">Profil Saya</h1>
 
-		<div class="row g-4">
-			<div class="col-lg-4">
-				<div class="card-jetski p-4 text-center">
-					<img src="Img/avatar_icon.png" alt="Avatar Audric Momota" width="100" class="rounded-circle mb-3">
-					<h2 class="h6 fw-bold mb-0">Audric Momota</h2>
-					<p class="small text-muted mb-3">Penjual Terverifikasi</p>
-					<input class="form-control form-control-sm" type="file" accept="image/*">
-				</div>
-				<div class="table-responsive mt-3">
-					<table class="table table-sm table-borderless">
-						<tbody>
-							<tr>
-								<th>Bergabung</th>
-								<td>Jan 2022</td>
-							</tr>
-							<tr>
-								<th>Status</th>
-								<td>
-									<span class="badge bg-success">Aktif</span>
-								</td>
-							</tr>
-							<tr>
-								<th>Rating</th>
-								<td>4.9 / 5</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-
-			<div class="col-lg-8">
-				<form class="card-jetski p-4" action="12-E-profil.html" method="get">
-					<div class="row g-3">
-						<div class="col-md-6">
-							<label class="form-label small">Nama Lengkap</label>
-							<input type="text" class="form-control" name="nama" value="Audric Momota">
+				<div class="row g-4">
+					<div class="col-lg-4">
+						<div class="card-jetski p-4 text-center">
+							<img src="Img/avatar_icon.png" alt="Avatar Audric Momota" width="100" class="rounded-circle mb-3">
+							<h2 class="h6 fw-bold mb-0">Audric Momota</h2>
+							<p class="small text-muted mb-3">Penjual Terverifikasi</p>
+							<input class="form-control form-control-sm" type="file" accept="image/*">
 						</div>
-						<div class="col-md-6">
-							<label class="form-label small">Email</label>
-							<input type="email" class="form-control" name="email" value="budi@jetstar.id">
-						</div>
-						<div class="col-md-6">
-							<label class="form-label small">Nomor HP</label>
-							<input type="tel" class="form-control" name="hp" value="081234567890">
-						</div>
-						<div class="col-md-6">
-							<label class="form-label small">Lokasi</label>
-							<select class="form-select" name="lokasi">
-								<option>Bali</option>
-								<option>Jakarta</option>
-								<option>Surabaya</option>
-							</select>
-						</div>
-						<div class="col-12">
-							<label class="form-label small">Bio Singkat</label>
-							<textarea class="form-control" name="bio" rows="3">Penjual dan penyedia sewa jetski di area Bali, melayani sejak 2022.</textarea>
+						<div class="table-responsive mt-3">
+							<table class="table table-sm table-borderless">
+								<tbody>
+									<tr>
+										<th>Bergabung</th>
+										<td>Jan 2022</td>
+									</tr>
+									<tr>
+										<th>Status</th>
+										<td>
+											<span class="badge bg-success">Aktif</span>
+										</td>
+									</tr>
+									<tr>
+										<th>Rating</th>
+										<td>4.9 / 5</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
-					<button type="submit" class="btn btn-primary text-white mt-4">
-						Simpan Perubahan
-					</button>
-				</form>
-			</div>
-		</div>
-	</main>
-</div>
 
-</body>
+					<div class="col-lg-8">
+						<form class="card-jetski p-4" action="12-E-profil.html" method="get">
+							<div class="row g-3">
+								<div class="col-md-6">
+									<label class="form-label small">Nama Lengkap</label>
+									<input type="text" class="form-control" name="nama" value="Audric Momota">
+								</div>
+								<div class="col-md-6">
+									<label class="form-label small">Email</label>
+									<input type="email" class="form-control" name="email" value="budi@jetstar.id">
+								</div>
+								<div class="col-md-6">
+									<label class="form-label small">Nomor HP</label>
+									<input type="tel" class="form-control" name="hp" value="081234567890">
+								</div>
+								<div class="col-md-6">
+									<label class="form-label small">Lokasi</label>
+									<select class="form-select" name="lokasi">
+										<option>Bali</option>
+										<option>Jakarta</option>
+										<option>Surabaya</option>
+									</select>
+								</div>
+								<div class="col-12">
+									<label class="form-label small">Bio Singkat</label>
+									<textarea class="form-control" name="bio" rows="3">Penjual dan penyedia sewa jetski di area Bali, melayani sejak 2022.</textarea>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-primary text-white mt-4">Simpan Perubahan</button>
+						</form>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
 </html>
